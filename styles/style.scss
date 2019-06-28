@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    background-color: #f3f4fa;
+}
+
+header {
+    margin-bottom: 260px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px grey;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    padding: 19px 10px;
+}
+
+.header {
+    background: url(../img/header.png) no-repeat black;
+    background-size: 100% 100%;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    position: relative;
+    &_text {
+        color: #fff;
+        text-align: center;
+        font-family: sans-serif;
+        h2 {
+            margin-bottom: 50px;
+            font-size: 2em;
+            br {
+                display: none;
+            }
+        }
+        h1 {
+            margin-bottom: 210px;
+            font-size: 3.5em;
+            br {
+                display: none;
+            }
+        }
+        a {
+            font-size: 1em;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &_example {
+        display: block;
+        position: absolute;
+        left: 50%;
+        z-index: 0;
+    }
+}
+
+.links {
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    &_title {
+        margin-bottom: 25px;
+    }
+    &_items {
+        padding-left: 17px;
+        span {
+            color: #a8a8a8;
+        }
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.points {
+    background-color:#f7f8fa;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    p {
+        text-align: center;
+        font-family: sans-serif;
+    }
+    &_title {
+        margin-bottom: 20px;
+    }
+    &_text {
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+}
+
+.rules {
+    display: flex;
+    justify-content: flex-start;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    h3 {
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+    &_links {
+        max-width: 360px;
+        margin-right: 45px;
+        &_items {
+            padding-left: 17px;
+            li {
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    &_prices {
+        .prices_item {
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            .item_cost {
+                color:#1ea01e;
+                margin-bottom: 25px;
+                font-size: 2em;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.request {
+    #getForm {
+        display: flex;
+        flex-flow: column;
+        background-color: #fff4b3;
+        padding: 30px 0;
+        margin-bottom: 35px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        .form_title {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .form_block {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            input[list]::-webkit-calendar-picker-indicator {
+                    display: none;
+            }
+            
+            &-left {
+                min-width: 165px;
+                margin-right: 25px;
+            }
+            &-field {
+                padding: 15px;
+                width: 360px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                outline: none;
+                border: 0.4px solid grey;
+                &:focus {
+                    background-color: #eef0e5;
+                }
+            }
+            &_error {
+                color: red;
+                margin-bottom: 20px;
+                display: none;
+            }
+            &-button {
+                background-color: #b6d88a;
+                color: #fff;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.extra {
+    margin-bottom: 60px;
+    p {
+        line-height: 1.5em;
+        font-family: sans-serif;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.footer {
+    background: #000;
+}
+
+
+
+@import 'media'

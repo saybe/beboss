@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="Логотип компании"></a>
+        </div>
+
+        <header>
+            <div class="header">
+                <div class="header_text">
+                    <h2>Поставь ссылку на <br/>БИБОСС</h2>
+                    <h1>Заработай <br/>баллы!</h1>
+                    <a href="#">Франшиза Dunkin’ Donuts на БИБОСС</a>
+                    <img src="img/header_example.png" alt="Пример ссылки на сайте" class="header_example">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                
+                <div class="links">
+                    <p class="links_title">
+                        БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:
+                    </p>
+                    <ul class="links_items">
+                        <li>Текстовая ссылка «Франшиза <span>[Название]</span> на БИБОСС»</li>
+                        <li>Текстовая ссылка «Наша франшиза на БИБОСС»</li>
+                        <li>Кнопка “Нравится франшиза” + счетчик популярности</li>
+                    </ul>
+                </div>
+
+                <div class="points">
+                    <p class="points_title">
+                        Зачем нужны <a href="#">баллы</a>?
+                    </p>
+                    <p class="points_text">
+                        Больше баллов — выше позиция в выдаче категории
+                    </p>
+                </div>
+
+                <div class="rules">
+                    <div class="rules_links">
+                        <h3>Правила размещения ссылки</h3>
+                        <ul class="rules_links_items">
+                            <li>Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt;)</li>
+                            <li>Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта</li>
+                            <li>Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу</li>
+                            <li>При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</li>
+                        </ul>
+                    </div>          
+                    <div class="rules_prices">
+                        <h3>Стоимость ссылки</h3>
+                        <div class="prices_item">
+                            <p class="item_cost">
+                                200 баллов
+                            </p>
+                            <p class="item_condition">
+                                ТиЦ Вашего сайта от 10
+                            </p>
+                        </div>
+                        <div class="prices_item">
+                            <p class="item_cost">
+                                50 баллов
+                            </p>
+                            <p class="item_condition">
+                                ТиЦ Вашего сайта от 0 до 10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <form action="#" method="POST" id="getForm">
+                        <p class="form_title">Получить ссылку</p>
+                        <div class="form_block">
+                                <div class="form_block-left">
+                                    <label for="name">Ваше имя</label>
+                                </div>
+                                <div class="form_block-right">
+                                        <input class="form_block-field" id="name" type="text" name="user_name" placeholder="Представьтесь, пожалуйста" required>
+                                </div>       
+                        </div>
+
+                        <div class="form_block">
+                                <div class="form_block-left">
+                                    <label for="phone">Номер телефона</label>
+                                </div>
+                                <div class="form_block-right">
+                                        <input class="form_block-field" id="phone" type="tel" name="phone_number" placeholder="Для начисления баллов и связи с Вами" required>
+                                        <p class="form_block_error">Укажите правильный телефон</p>
+                                </div>
+                        </div>
+
+                        <div class="form_block">
+                                <div class="form_block-left">
+                                        <label for="franchise">Название франшизы</label>
+                                </div>
+                                <div class="form_block-right">
+                                        <input list="franch_names" class="form_block-field" id="franchise" type="text" name="franch_name" placeholder="Например, Subway" required>
+                                        <datalist id="franch_names">
+                                            <option value="Проворный ткачик"></option>
+                                            <option value="ПРОФИ-СПОРТ"></option>
+                                            <option value="Проспект"></option>
+                                            <option value="Просто чудо"></option>
+                                            <option value="Прокат Пони+"></option>
+                                        </datalist>
+                                </div>
+                        </div>
+
+                        <div class="form_block">
+                                <div class="form_block-right">
+                                        <input class="form_block-button" type="submit" value="Получить ссылку">
+                                </div>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="extra">
+                    <p>
+                        <span>Это еще не все...</span> Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, 
+                        интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="logo">
+                        <a href="#"><img src="img/logo_min.png" alt="Логотип компании"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+   <script src="script/script.js"></script>
+</body>
+</html>
