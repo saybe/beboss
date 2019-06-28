@@ -1,1 +1,1 @@
-# beboss
+beboss example page
