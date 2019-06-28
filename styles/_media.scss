@@ -111,6 +111,9 @@ $small: 320px;
         }
     
         &_prices {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
             .prices_item {
                 margin-bottom: 30px;
                 text-align: center;
